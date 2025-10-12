@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔹 Background Image (with fade effect) -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/register_bg"
+        android:alpha="0.6" /> <!-- 👈 fade effect -->
+
+    <!-- 🔹 Foreground Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register New Account"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="20dp"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4" />
+
+            <!-- Full Name -->
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Full Name"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginBottom="12dp"
+                android:padding="10dp"
+                android:elevation="3dp"
+                android:alpha="0.9"/>
+
+            <!-- DOB -->
+            <EditText
+                android:id="@+id/etDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Date of Birth"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginBottom="12dp"
+                android:padding="10dp"
+                android:elevation="3dp"
+                android:alpha="0.9"/>
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:inputType="phone"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginBottom="12dp"
+                android:padding="10dp"
+                android:elevation="3dp"
+                android:alpha="0.9"/>
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Create Username"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginBottom="12dp"
+                android:padding="10dp"
+                android:elevation="3dp"
+                android:alpha="0.9"/>
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Create Password"
+                android:inputType="textPassword"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:elevation="3dp"
+                android:alpha="0.9"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:elevation="6dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cafeteria management✨</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_as_employee">Login or Ragistration </string>
+    <string name="show_customer_interface">✨ MENU ✨</string>
+    <string name="welcome">Welcome to Cafeteria Management</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="customer_panel">Customer Panel</string>
+    <string name="menu">Menu</string>
+</resources>

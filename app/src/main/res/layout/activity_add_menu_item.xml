@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔹 Background Image -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu_bg"
+        android:alpha="0.9" />
+
+    <!-- 🔹 Foreground Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- 🔸 Heading -->
+            <TextView
+                android:id="@+id/tvHelloAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Admin 👋"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:shadowColor="#80000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="6"
+                android:layout_marginBottom="30dp" />
+
+            <!-- 🔸 Item Name Input -->
+            <EditText
+                android:id="@+id/etItemName"
+                android:hint="Enter Item Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginBottom="16dp"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:alpha="0.9"/>
+
+            <!-- 🔸 Item Price Input -->
+            <EditText
+                android:id="@+id/etItemPrice"
+                android:hint="Enter Item Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginBottom="16dp"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:alpha="0.9"/>
+
+            <!-- 🔸 Save Button -->
+            <Button
+                android:id="@+id/btnSaveItem"
+                android:text="Save Item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:elevation="6dp"
+                android:alpha="0.95"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
